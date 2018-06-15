@@ -31,7 +31,7 @@ const viewCart = () => {
       counter += 1
     }
   }
-  return `In your cart, you have ${list.join(', ')}and ${cart[cart.length-1]['itemName']} at $${cart[cart.length-1]['itemPrice']}.`
+  return `In your cart, you have ${list.join(', ')}, and ${cart[cart.length-1]['itemName']} at $${cart[cart.length-1]['itemPrice']}.`
 }
 
 const total = () => {
