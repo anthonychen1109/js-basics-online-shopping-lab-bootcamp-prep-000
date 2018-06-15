@@ -49,7 +49,7 @@ const removeFromCart = (name) => {
       var removed = cart.splice(counter, 1)
       return removed
     } else {
-      return 'That item is not in your cart.'
+      return `That item is not in your cart.`
     }
     counter += 1
   }
