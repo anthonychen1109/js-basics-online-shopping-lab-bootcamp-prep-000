@@ -43,15 +43,12 @@ const total = () => {
 }
 
 const removeFromCart = (name) => {
-  var counter = 0
-  while (counter < cart.length) {
-    if (cart[counter]['itemName'] == name) {
-      var removed = cart.splice(counter, 1)
-      return removed
+  for (let i=0; i<cart.length; i++) {
+    if (cart[i]['itemName'] === name) {
+      return cart.splice(i, 1)
     } else {
-      return `That item is not in your cart.`
+      return 'That item is not in your cart.'
     }
-    counter += 1
   }
 }
 
