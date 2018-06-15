@@ -46,11 +46,3 @@ const placeOrder = (creditCard="") => {
     return `Your total cost is $${my_total}, which will be charged to the card ${creditCard}.`
   }
 }
-
-console.log(addToCart('Cheese'));
-console.log(addToCart('Bread'));
-console.log(addToCart('Cherry'));
-console.log(viewCart());
-console.log(total());
-console.log(placeOrder(13123));
-// console.log(removeFromCart('Cheese'));
