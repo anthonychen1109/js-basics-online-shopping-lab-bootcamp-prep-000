@@ -46,10 +46,9 @@ const removeFromCart = (name) => {
   for (let i=0; i<cart.length; i++) {
     if (cart[i]['itemName'] === name) {
       return cart.splice(i, 1)
-    } else {
-      return 'That item is not in your cart.'
     }
   }
+  return 'That item is not in your cart.'
 }
 
 const placeOrder = (creditCard="") => {
