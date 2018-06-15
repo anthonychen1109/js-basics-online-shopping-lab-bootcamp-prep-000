@@ -22,7 +22,7 @@ const viewCart = () => {
   var list = []
   var counter = 0
   if (cart.length === 1) {
-    return `In your cart, you have ${cart['itemName']} at $${cart['itemPrice']}.`
+    return `In your cart, you have ${cart[0]['itemName']} at $${cart[0]['itemPrice']}.`
   } else {
     while(counter < cart.length-1) {
       list.push(`${cart[counter]['itemName']} at $${cart[counter]['itemPrice']}, `)
