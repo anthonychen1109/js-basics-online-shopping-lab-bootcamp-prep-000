@@ -21,9 +21,13 @@ const addToCart = (item) => {
 const viewCart = () => {
   var list = []
   var counter = 0
-  while(counter < cart.length-1) {
-    list.push(`${cart[counter]['itemName']} at $${cart[counter]['itemPrice']}, `)
-    counter += 1
+  if (cart.length === 0) {
+    return "Your shopping cart is empty."
+  } else {
+    while(counter < cart.length-1) {
+      list.push(`${cart[counter]['itemName']} at $${cart[counter]['itemPrice']}, `)
+      counter += 1
+    }
   }
   return `In your cart, you have ${list}and ${cart[cart.length-1]['itemName']} and at $${cart[cart.length-1]['itemPrice']}.`
 }
