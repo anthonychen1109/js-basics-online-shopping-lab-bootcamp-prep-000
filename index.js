@@ -52,7 +52,7 @@ const removeFromCart = (name) => {
 
 const placeOrder = (creditCard="") => {
   if (creditCard.length == "") {
-    return "Sorry, we don't have a credit card on file for you.."
+    return "Sorry, we don't have a credit card on file for you."
   } else {
     var my_total = total()
     cart = []
