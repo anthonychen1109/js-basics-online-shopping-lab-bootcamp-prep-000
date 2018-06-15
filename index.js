@@ -54,7 +54,7 @@ const placeOrder = (creditCard="") => {
   if (creditCard.length == "") {
     return "Sorry, we don't have a credit card on file for you.."
   } else {
-    my_total = total()
+    var my_total = total()
     cart = []
     return `Your total cost is $${my_total}, which will be charged to the card ${creditCard}.`
   }
